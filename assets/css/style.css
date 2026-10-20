@@ -1,0 +1,83 @@
+/* ==========================================
+   SI KANTIN - Utama & Custom Styling
+   Tema Warna: Oranye, Putih, Abu-abu Muda
+   ========================================== */
+
+:root {
+    --bg-utama: #f8f9fa;        /* Abu-abu muda lembut */
+    --oranye-utama: #ff6b00;    /* Oranye cerah */
+    --oranye-hover: #e05e00;    /* Oranye gelap saat tombol diklik */
+    --putih: #ffffff;           /* Putih bersih */
+    --teks-gelap: #212529;      /* Warna teks utama */
+    --border-halus: #e9ecef;   /* Warna garis batas tipis */
+}
+
+/* Base Style */
+body {
+    background-color: var(--bg-utama);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: var(--teks-gelap);
+}
+
+/* Header & Navbar */
+.navbar-kantin {
+    background-color: var(--oranye-utama);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Container (Putih dengan sudut tumpul & bayangan lembut) */
+.card-custom {
+    border: none;
+    border-radius: 12px;
+    background-color: var(--putih);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Tampilan Gambar Menu (Agar Tidak Terpotong/Crop) */
+.img-menu {
+    height: 140px;
+    object-fit: contain;            /* Memastikan gambar tampil utuh proporsional */
+    background-color: #f1f3f5;      /* Warna latar abu-abu netral untuk sisa area */
+    border-radius: 8px;
+    padding: 6px;
+    margin-bottom: 8px;
+}
+
+/* Tombol Oranye Utama */
+.btn-oranye {
+    background-color: var(--oranye-utama);
+    color: var(--putih);
+    border-radius: 8px;
+    font-weight: 600;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-oranye:hover {
+    background-color: var(--oranye-hover);
+    color: var(--putih);
+    box-shadow: 0 2px 6px rgba(255, 107, 0, 0.3);
+}
+
+/* Badge Kategori Menu */
+.badge-kategori {
+    background-color: #fff0e6;
+    color: var(--oranye-utama);
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+/* Styling Halaman Login */
+.style-login {
+    border-top: 5px solid var(--oranye-utama);
+}
+
+/* Scrollbar Ringan untuk Daftar Pesanan Kasir */
+#keranjang-list::-webkit-scrollbar {
+    width: 6px;
+}
+#keranjang-list::-webkit-scrollbar-thumb {
+    background-color: #ced4da;
+    border-radius: 4px;
+}
